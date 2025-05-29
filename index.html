@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario de Registración</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="form-container">
+      <h2>Formulario de Registración</h2>
+      <form id="registroForm">
+        <label>Apellido:
+          <input type="text" id="apellido" required>
+        </label>
+        <label>Nombre:
+          <input type="text" id="nombre" required>
+        </label>
+        <label>DNI:
+          <input type="text" id="dni" maxlength="8" required>
+        </label>
+        <label>Fecha de Nacimiento:
+          <input type="date" id="fechaNacimiento" required>
+        </label>
+        <label>Email:
+          <input type="email" id="email" required>
+        </label>
+        <button type="submit">Registrar</button>
+      </form>
+      <button id="botonDePreguntas">Responder Preguntas</button>
+        <label>Nombre de tu mascota:
+            <input type="text" id="nombreDeMascota" requiered>
+        </label>
+        <label>Color favorito:
+            <input type="text" id="ColorFavortio" requiered>
+        </label>
+        <label>Nacionalidad:
+            <input type="text" id="nacionalidad" required>
+        </label>
+      <div id="respuestas"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
